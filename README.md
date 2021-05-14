@@ -2,7 +2,7 @@
 
 ### 1. kronikos assignment:
   ###### Patient CRUD:
-  Patient Attributes:
+  	Patient Attributes:
 		1. Name
 		2. Number
 		3. Gender
