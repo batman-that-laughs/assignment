@@ -10,8 +10,8 @@ public class SDKServiceImpl implements SDKService {
     SDKDemo sdkDemo;
 
     @Override
-    public void callDemoMethod(){
+    public String callDemoMethod(){
         sdkDemo = new SDKDemo();
-        sdkDemo.demo();
+        return sdkDemo.demo();
     }
 }

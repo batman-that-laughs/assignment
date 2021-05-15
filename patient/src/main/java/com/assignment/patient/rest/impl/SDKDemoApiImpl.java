@@ -17,7 +17,7 @@ public class SDKDemoApiImpl implements SDKDemoApi {
 
     @Override
     public ResponseEntity sdkDemo() {
-        sdkService.callDemoMethod();
-        return new ResponseEntity(new Response("SDK Called Successfully", ResponseMessage.SUCCESS_MESSAGE, null), HttpStatus.OK);
+        String message = sdkService.callDemoMethod();
+        return new ResponseEntity(new Response(message, ResponseMessage.SUCCESS_MESSAGE, null), HttpStatus.OK);
     }
 }

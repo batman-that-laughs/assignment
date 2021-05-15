@@ -5,8 +5,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class SDKDemo {
 
-   public void demo(){
-       System.out.println("SDK says hello world!");
+   public String demo(){
+       String message = "SDK says hello world!";
+       return message;
    }
 
 
