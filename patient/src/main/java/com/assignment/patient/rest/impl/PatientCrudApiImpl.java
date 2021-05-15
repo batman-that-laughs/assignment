@@ -25,7 +25,7 @@ public class PatientCrudApiImpl implements PatientCrudApi {
     public ResponseEntity savePatientProfile(PatientProfile profile) {
         try {
             patientProfileCrudService.savePatientProfile(profile);
-            return new ResponseEntity(new Response("Created Successfully", ResponseMessage.SUCCESS_MESSAGE, null), HttpStatus.OK);
+            return new ResponseEntity(new Response("Saved Successfully", ResponseMessage.SUCCESS_MESSAGE, null), HttpStatus.OK);
         }catch(InvalidDataException invalidDataException){
             return new ResponseEntity(new Response(null, ResponseMessage.ERROR_MESSAGE, invalidDataException.getErrorMessages()), HttpStatus.INTERNAL_SERVER_ERROR);
         }catch(Exception e){
